@@ -1,0 +1,139 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	font-family: verdana, tahoma, helvetica, sans-serif, arial;
+	font-size: 62.5%;
+}
+
+body{
+	font-size: 1.6rem;
+	background-color: #f0f0f0;
+}
+
+.container{
+	width: 62rem;
+	height: 46rem;
+	margin: 20rem auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.join{
+	background-color: #ffffff;
+	padding: 4rem;
+	border-radius: 0.75rem 0.75rem 0 0;  /* top-left, top-right, bottom-right, bottom-left corners */
+}
+
+.join h2{
+	font-size: 1.8rem;
+	color: #8dded5;
+	font-weight: bold;
+}
+
+.join h3{ 
+	color: #d1dd8b; 
+	font-size: 1.35rem;
+	font-weight: bold;
+	margin: 2rem 0;
+}
+
+.join p{
+	font-size: 1.25rem;
+	color: #cfd2d7;    /* dfe3e6 */
+	font-weight: bold;
+	margin-bottom: 1rem;
+}
+
+.subwhy{
+	display: flex;
+	flex-direction: row;
+	border-radius: 0 0 0.75rem 0.75rem;
+	overflow: hidden;
+}
+
+/* below allows the two div inside subwhy to have equal sizes */
+.subwhy div{
+	flex: 1 1 0;   /* short for:  flex-grow: 1, flex-shrink: 0, flex-basis: 0; */
+}
+
+.subscription{
+	background-color: #2bb3b1;
+	padding: 4rem;
+}
+
+.subscription h3{
+	font-size: 1.6rem;
+	color: rgba(255, 255, 255, 0.75);
+}
+
+p.apm{
+	margin: 1.5rem 0 0.75rem 0;
+	font-size: 1.2rem;
+	font-weight: bold;
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.subscription span{
+	color: rgba(255, 255, 255, 0.75);
+	font-size: 2.5rem;
+}
+
+.subscription div{
+	/*margin: 1rem auto 0 auto;*/
+}
+
+.subscription div p{
+	color: rgba(255, 255, 255, 0.6);
+	font-size: 1.2rem;
+	font-weight: bold;
+	margin-bottom: 2rem;
+}
+
+.subscription button{
+	width: 22rem;
+	border: none;
+	padding: 1.2rem;
+	border-radius: 0.5rem;
+	background-color: #bfdf32;
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+.whyus{
+	background-color: #4abebd;
+	padding: 4rem;
+}
+
+.whyus h3{
+	font-size: 1.6rem;
+	color: rgba(255, 255, 255, 0.75);
+}
+
+.whyus ul{
+	color: rgba(255, 255, 255, 0.5);
+	list-style: none;
+	font-size: 1.1rem;
+	font-weight: bold;
+}
+
+.whyus li{
+	margin-bottom: 0.2rem;
+}
+
+.whyus li:first-child{
+	margin-top: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
