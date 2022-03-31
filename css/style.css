@@ -5,7 +5,7 @@
 }
 
 html{
-	font-family: verdana, tahoma, helvetica, sans-serif, arial;
+	font-family: arial, sans-serif, helvetica, tahoma, verdana;
 	font-size: 62.5%;
 }
 
@@ -14,6 +14,127 @@ body{
 	background-color: #f0f0f0;
 }
 
+/* This applies from 0px to 600px */
+.container{
+	width: 100%;
+	margin: 2rem auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.join{
+	background-color: #ffffff;
+	padding: 2rem;
+	border-radius: 0.5rem 0.5rem 0 0;  /* top-left, top-right, bottom-right, bottom-left corners */
+}
+
+.join h2{
+	font-size: 1.8rem;
+	color: #8dded5;
+	font-weight: bold;
+}
+
+.join h3{ 
+	color: #d1dd8b; 
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin: 2rem 0;
+}
+
+.join p{
+	font-size: 1.3rem;
+	color: #cfd2d7;    /* dfe3e6 */
+	font-weight: bold;
+	margin-bottom: 1rem;
+}
+
+.subwhy{
+	display: flex;
+	flex-direction: column;
+	border-radius: 0 0 0.5rem 0.5rem;
+	overflow: hidden;
+}
+
+/* below allows the two div inside subwhy to have equal sizes */
+.subwhy div{
+	flex: 1 1 0;   /* short for:  flex-grow: 1, flex-shrink: 0, flex-basis: 0; */
+}
+
+.subscription{
+	background-color: #2bb3b1;
+	padding: 2.5rem;
+}
+
+.subscription h3{
+	font-size: 1.8rem;
+	color: rgba(255, 255, 255, 0.75);
+}
+
+p.apm{
+	margin: 1.5rem 0 0.75rem 0;
+	font-size: 1.4rem;
+	font-weight: bold;
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.subscription span{
+	color: rgba(255, 255, 255, 0.75);
+	font-size: 2.8rem;
+}
+
+.subscription div p{
+	color: rgba(255, 255, 255, 0.6);
+	font-size: 1.4rem;
+	font-weight: bold;
+	margin-bottom: 3rem;
+}
+
+.subscription p,
+.subscription div p{
+	
+}
+
+.subscription button{
+	width: 100%;
+	border: none;
+	padding: 1.5rem;
+	border-radius: 0.5rem;
+	background-color: #bfdf32;
+	color: rgba(255, 255, 255, 0.8);
+	font-size: 1.4rem;
+	font-weight: bold;
+}
+
+.whyus{
+	background-color: #4abebd;
+	padding: 2.5rem;
+}
+
+.whyus h3{
+	font-size: 2rem;
+	color: rgba(255, 255, 255, 0.75);
+}
+
+.whyus ul{
+	color: rgba(255, 255, 255, 0.5);
+	list-style: none;
+	font-size: 1.4rem;
+	font-weight: bold;
+}
+
+.whyus li{
+	margin-bottom: 0.2rem;
+}
+
+.whyus li:first-child{
+	margin-top: 1.5rem;
+}
+
+
+
+
+/* This applies from 600px above */
+@media (min-width: 600px){
 .container{
 	width: 62rem;
 	height: 46rem;
@@ -130,10 +251,56 @@ p.apm{
 }
 
 
+}
 
 
 
 
 
 
+/*
+# Mobile
+only screen and (min-width: 480px)
 
+# Tablet
+only screen and (min-width: 768px) 
+
+# Desktop
+only screen and (min-width: 992px)
+
+# Huge
+only screen and (min-width: 1280px) 
+
+Or:
+
+# Phone
+only screen and (max-width:320px)
+
+# Tablet
+only screen and (min-width:321px) and (max-width:768px)
+
+# Desktop
+only screen and (min-width:769px)
+
+What should the breakpoints be for each device?
+*/
+
+/*
+IMO these are the best breakpoints:
+
+@media (min-width:320px)  { * smartphones, portrait iPhone, portrait 480x320 phones (Android) * }
+@media (min-width:480px)  { * smartphones, Android phones, landscape iPhone * }
+@media (min-width:600px)  { * portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) * }
+@media (min-width:801px)  { * tablet, landscape iPad, lo-res laptops ands desktops * }
+@media (min-width:1025px) { * big landscape tablets, laptops, and desktops * }
+@media (min-width:1281px) { * hi-res laptops and desktops * }
+
+Edit: Refined to work better with 960 grids:
+
+@media (min-width:320px)  { * smartphones, iPhone, portrait 480x320 phones * }
+@media (min-width:481px)  { * portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. * }
+@media (min-width:641px)  { * portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones * }
+@media (min-width:961px)  { * tablet, landscape iPad, lo-res laptops ands desktops * }
+@media (min-width:1025px) { * big landscape tablets, laptops, and desktops * }
+@media (min-width:1281px) { * hi-res laptops and desktops * }
+*/
